@@ -6,87 +6,78 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="rain"></div>
-<div class="wrap">
-
-<section class="page active">
+<div id="falling"></div>
+<div class="scene">
+<section id="app" class="card">
 <h1>⚖️ СЪДЕБЕН СПОР</h1>
 <h2>Петя ❤️ Теодор Илиев</h2>
 <p>Дело №26092019</p>
-<div id="counter"></div>
-<button onclick="go()">Влизам в залата, дупе</button>
+<div id="clock"></div>
+<button onclick="next()">Влизам в залата, дупе</button>
 </section>
 
-<section class="page">
+<section class="card hidden">
 <h2>📂 Доказателство №1</h2>
-<p>Къде беше ПЪРВАТА ПЪРВА среща и коя година?</p>
-<input id="answer" placeholder="Твоят отговор">
-<button onclick="check()">Предай доказателството</button>
-<p id="result"></p>
-<button onclick="go()">Продължи</button>
+<p>Къде и през коя година беше ПЪРВАТА ПЪРВА среща?</p>
+<input id="q" placeholder="Напиши отговора">
+<button onclick="answer()">Предай доказателството</button>
+<p id="msg"></p>
+<button onclick="next()">Продължи</button>
 </section>
 
-<section class="page">
+<section class="card hidden">
 <h2>🗺️ Как стигнахме дотук</h2>
-<div class="box">☕ Relax, Надежда<br>„Първата следа.“</div>
-<div class="box">🚗 Взимане от училище<br>„Историята става сериозна.“</div>
-<div class="box">📍 Суита<br>„Разговори, спорове и втори шанс.“</div>
-<div class="box">👥 Тайни свидетели<br><b>Майка ти и баща ти</b><br>„Наблюдавахме случая от близо.“</div>
-<div class="box">🔨 Гинци<br>„Идеите се раждат по-бързо от ремонта.“</div>
-<button onclick="go()">Продължи</button>
+<div class="point">☕ Relax, Надежда<br>„Първата следа.“</div>
+<div class="point">🚗 Взимане от училище<br>„Историята започва да става сериозна.“</div>
+<div class="point">📍 Суита<br>„Разговори, спорове и втори шанс.“</div>
+<div class="point">👥 Тайни свидетели: майка ти и баща ти<br>„Наблюдавахме случая от близо.“</div>
+<div class="point">🔨 Гинци<br>„Идеите се раждат по-бързо от ремонта.“</div>
+<button onclick="next()">Продължи</button>
 </section>
 
-<section class="page tools">
+<section class="card">
 <h2>🔨 Делото Гинци</h2>
 <p>Идеи: много</p>
 <p>Спорове: още повече</p>
 <p>Любов: много все още ❤️</p>
 <p>Ремонти: безкраен сезон</p>
-<button onclick="go()">Продължи</button>
 </section>
 
-<section class="page">
+<section class="card hidden">
 <h2>🚗 Автомобилни доказателства</h2>
-
-<img src="images/frontera.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Opel_Frontera_A_front_20080328.jpg">
 <h3>Opel Frontera 1995</h3>
 <p>RIP 🕊️<br>1995 - неизвестна дата<br>Служи вярно.<br>Премина през много.<br>Остана в историята.</p>
 
-<img src="images/mercedes124.jpg">
 <h3>Mercedes 124</h3>
-<p>Случай Левски.<br>
-Някои хора, много напрежение и точно тогава 124-ката отказа да запали.<br>
-Но преживяхме и това.</p>
+<p>Случай Левски.<br>Някои хора, много напрежение и точно тогава 124-ката отказа да запали.<br>Но преживяхме и това.</p>
 
-<img src="images/ml.jpg">
 <h3>Червен Mercedes ML</h3>
-<p>600 евро за ремонт: "Много са."<br>
-600 евро за двигател: "Инвестиция."</p>
-<button onclick="go()">Продължи</button>
+<p>600 евро за ремонт: „Много са.“<br>600 евро за двигател: „Инвестиция.“</p>
+<button onclick="next()">Продължи</button>
 </section>
 
-<section class="page">
+<section class="card hidden">
 <h2>📘 Ръководство за живеене с Теодор</h2>
 <p>Версия 7.0</p>
 <p>Инат: ██████████ 100%</p>
 <p>Идеи: Безкрайни</p>
 <p>Доверие към идеите на Петя: Първоначално ниско</p>
 <p>Финален резултат: Обикновено е било добра идея</p>
-<button onclick="go()">Финално решение</button>
+<button onclick="next()">Решение</button>
 </section>
 
-<section class="page">
+<section class="card hidden">
 <h2>⚖️ ФИНАЛНО РЕШЕНИЕ</h2>
 <p>Жоро:</p>
 <p>„След разглеждане на всички доказателства съдът се произнася.“</p>
 <h3>Теодор Илиев е признат за виновен.</h3>
 <p>✓ прекомерен инат<br>✓ много ремонти<br>✓ прекалено много идеи<br>✓ понякога ме побърква<br>✓ понякога не ми вярва</p>
-<p>Но също така:</p>
-<p>✓ остана<br>✓ построи този живот с мен<br>✓ мина през всичко това</p>
-<button onclick="go()">Финал</button>
+<p>Но също така:<br>✓ остана<br>✓ построи този живот с мен<br>✓ мина през всичко това</p>
+<button onclick="next()">Финал</button>
 </section>
 
-<section class="page final">
+<section class="card hidden">
 <h1>🎆</h1>
 <h2>Петя ❤️ Теодор</h2>
 <p>26.09.2019</p>
@@ -95,7 +86,6 @@
 <h2>💛 Честита годишнина, дупе.</h2>
 <p>Обичкам си те много.</p>
 </section>
-
 </div>
 <script src="script.js"></script>
 </body>
