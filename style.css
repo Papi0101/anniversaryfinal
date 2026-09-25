@@ -1,48 +1,10 @@
-body{
-margin:0;
-min-height:100vh;
-background:#17101d;
-color:white;
-font-family:Arial;
-text-align:center;
-overflow-x:hidden;
-}
-
-.container{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:flex-start;
-padding:20px;
-box-sizing:border-box;
-}
-
-.card{
-display:none;
-width:min(800px,92vw);
-box-sizing:border-box;
-background:#111d;
-border:2px solid #d4af37;
-border-radius:25px;
-padding:30px;
-margin-top:20px;
-}
-
-.card.active{
-display:block;
-}
-
-button{
-padding:14px 25px;
-border:0;
-border-radius:20px;
-background:#d4af37;
-font-weight:bold;
-}
-
-@media(max-width:600px){
-.card{
-padding:20px;
-width:94vw;
-}
-}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(135deg,#120b18,#51263c);color:white;font-family:Arial;text-align:center;overflow-x:hidden}
+main{min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:20px}
+.page{display:none;width:min(800px,95vw);background:#111e;border:2px solid #d4af37;border-radius:25px;padding:25px;margin-top:20px;position:relative;z-index:2}
+.page.active{display:block}
+button{padding:14px 25px;border:0;border-radius:20px;background:#d4af37;font-weight:bold;margin:10px}
+input{padding:12px;border-radius:10px;width:80%}
+.box{background:#222;padding:15px;border-radius:15px;margin:10px}
+#effects span{position:fixed;top:-30px;z-index:1;pointer-events:none;animation:fall 5s linear}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}

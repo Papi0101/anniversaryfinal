@@ -7,11 +7,11 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="falling"></div>
+<div id="effects"></div>
 
-<div class="container">
+<main>
 
-<section class="card active">
+<section class="page active">
 <h1>⚖️ СЪДЕБЕН СПОР</h1>
 <h2>Петя ❤️ Теодор Илиев</h2>
 <p>Дело №26092019</p>
@@ -19,26 +19,26 @@
 <button onclick="next()">Влизам в залата, дупе</button>
 </section>
 
-<section class="card">
+<section class="page">
 <h2>📂 Доказателство №1</h2>
 <p>Къде и през коя година беше ПЪРВАТА ПЪРВА среща?</p>
 <input id="answer" placeholder="Напиши отговора">
-<button onclick="checkAnswer()">Предай доказателството</button>
-<p id="answerResult"></p>
+<button onclick="check()">Предай доказателството</button>
+<p id="result"></p>
 <button onclick="next()">Продължи</button>
 </section>
 
-<section class="card">
+<section class="page">
 <h2>🗺️ Как стигнахме дотук</h2>
-<div class="box">☕ Relax, Надежда<br>Първата следа.</div>
-<div class="box">🚗 Взимане от училище<br>Историята става сериозна.</div>
-<div class="box">📍 Суита<br>Разговори, спорове и втори шанс.</div>
-<div class="box">👥 Тайни свидетели<br>Майка ти и баща ти.</div>
-<div class="box">🔨 Гинци<br>Идеите се раждат по-бързо от ремонта.</div>
+<div class="box">☕ Relax, Надежда<br>„Първата следа.“</div>
+<div class="box">🚗 Взимане от училище<br>„Историята става сериозна.“</div>
+<div class="box">📍 Суита<br>„Разговори, спорове и втори шанс.“</div>
+<div class="box">👥 Тайни свидетели<br>Майка ти и баща ти</div>
+<div class="box">🔨 Гинци<br>„Идеите се раждат по-бързо от ремонта.“</div>
 <button onclick="next()">Продължи</button>
 </section>
 
-<section class="card tools">
+<section class="page">
 <h2>🔨 Делото Гинци</h2>
 <p>Идеи: много</p>
 <p>Спорове: още повече</p>
@@ -47,18 +47,18 @@
 <button onclick="next()">Продължи</button>
 </section>
 
-<section class="card">
+<section class="page">
 <h2>🚗 Автомобилни доказателства</h2>
-<h3>Opel Frontera 1995</h3>
-<p>RIP 🕊️<br>1995 - неизвестна дата<br>Служи вярно.<br>Премина през много.</p>
-<h3>Mercedes 124</h3>
-<p>Случай Левски.<br>Някои хора, много напрежение и 124-ката отказа да запали.<br>Но преживяхме и това.</p>
-<h3>Червен Mercedes ML</h3>
-<p>600 евро за ремонт: "Много са."<br>600 евро за двигател: "Инвестиция."</p>
+<p>🚙 Opel Frontera 1995</p>
+<p>RIP 🕊️<br>Служи вярно.<br>Премина през много.</p>
+<p>🖤 Mercedes 124</p>
+<p>Случаят Левски.<br>Някои хора, много напрежение и 124-ката отказа да запали.<br>Но преживяхме и това.</p>
+<p>🔴 Mercedes ML</p>
+<p>600 евро за ремонт: „Много са.“<br>600 евро за двигател: „Инвестиция.“</p>
 <button onclick="next()">Продължи</button>
 </section>
 
-<section class="card">
+<section class="page">
 <h2>📘 Ръководство за живеене с Теодор</h2>
 <p>Версия 7.0</p>
 <p>Инат: ██████████ 100%</p>
@@ -68,29 +68,29 @@
 <button onclick="next()">Продължи</button>
 </section>
 
-<section class="card">
+<section class="page">
 <h2>⚖️ ФИНАЛНО РЕШЕНИЕ</h2>
 <p>Жоро:</p>
 <p>„След разглеждане на всички доказателства съдът се произнася.“</p>
-<p>Теодор Илиев е признат за виновен.</p>
+<p><b>Теодор Илиев е признат за виновен.</b></p>
 <p>✓ прекомерен инат<br>✓ много ремонти<br>✓ прекалено много идеи<br>✓ понякога ме побърква<br>✓ понякога не ми вярва</p>
 <p>Но също така:</p>
 <p>✓ остана<br>✓ построи този живот с мен<br>✓ мина през всичко това</p>
 <button onclick="next()">Финал</button>
 </section>
 
-<section class="card final">
-<h1>🎆</h1>
+<section class="page final">
+<h1>🎆✨</h1>
 <h2>Петя ❤️ Теодор</h2>
 <p>26.09.2019</p>
-<p id="finalClock"></p>
+<div id="finalClock"></div>
 <p>Много спорове.<br>Много идеи.<br>Много ремонти.</p>
 <h2>Делото продължава.</h2>
 <h2>💛 Честита годишнина, дупе.</h2>
 <p>Обичкам си те много.</p>
 </section>
 
-</div>
+</main>
 <script src="script.js"></script>
 </body>
 </html>
