@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<title>Делото на двама инати</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="fall"></div>
+<main>
+
+<section class="screen active">
+<h1>⚖️ СЪДЕБЕН СПОР</h1>
+<h2>Петя ❤️ Теодор Илиев</h2>
+<p>Дело №26092019</p>
+<div id="counter"></div>
+<button onclick="next()">Влизам в залата, дупе</button>
+</section>
+
+<section class="screen">
+<h2>📂 Доказателство №1</h2>
+<p>Господин Илиев, отговорете без помощ:</p>
+<p>Къде и през коя година беше ПЪРВАТА ПЪРВА среща?</p>
+<input id="answer" placeholder="Вашият отговор">
+<button onclick="checkAnswer()">Предай доказателството</button>
+<p id="reply"></p>
+<button onclick="next()">Продължи</button>
+</section>
+
+<section class="screen">
+<h2>🗺️ Как стигнахме дотук</h2>
+<div class="map">
+<div>☕ Relax, Надежда<br>„Първата следа.“</div>
+<div>🚗 Взимане от училище<br>„Историята става сериозна.“</div>
+<div>📍 Суита<br>„Разговори, спорове и втори шанс.“</div>
+<div>👥 Тайни свидетели<br><b>Майка ти и баща ти</b><br>„Наблюдавахме случая от близо.“</div>
+<div>🔨 Гинци<br>„Идеите се раждат по-бързо от ремонта.“</div>
+</div>
+<button onclick="next()">Продължи</button>
+</section>
+
+<section class="screen tools">
+<h2>🔨 Делото Гинци</h2>
+<p>Идеи: много</p>
+<p>Спорове: още повече</p>
+<p>Любов: много все още ❤️</p>
+<p>Ремонти: безкраен сезон</p>
+<button onclick="next()">Продължи</button>
+</section>
+
+<section class="screen">
+<h2>🚗 Автомобилни доказателства</h2>
+<img src="images/frontera.svg">
+<h3>Opel Frontera 1995</h3>
+<p>RIP 🕊️<br>1995 - неизвестна дата<br>Служи вярно.<br>Премина през много.<br>Остана в историята.</p>
+
+<img src="images/mercedes124.svg">
+<h3>Mercedes 124</h3>
+<p>Случай Левски.<br>Някои хора. Много напрежение.<br>И точно тогава 124-ката отказа да запали.<br>Но преживяхме и това.</p>
+
+<img src="images/ml.svg">
+<h3>Червен Mercedes ML</h3>
+<p>600 евро за ремонт: „Много са.“<br>600 евро за двигател: „Инвестиция.“</p>
+<button onclick="next()">Продължи</button>
+</section>
+
+<section class="screen">
+<h2>📘 Ръководство за живеене с Теодор</h2>
+<p>Версия 7.0</p>
+<p>Инат: ██████████ 100%</p>
+<p>Идеи: Безкрайни</p>
+<p>Доверие към идеите на Петя: Първоначално ниско</p>
+<p>Финален резултат: Обикновено е било добра идея</p>
+<button onclick="next()">Решение</button>
+</section>
+
+<section class="screen">
+<h2>⚖️ ФИНАЛНО РЕШЕНИЕ</h2>
+<p>Жоро:</p>
+<p>„След разглеждане на всички доказателства съдът се произнася.“</p>
+<h3>Теодор Илиев е признат за виновен.</h3>
+<p>✓ прекомерен инат<br>✓ много ремонти<br>✓ прекалено много идеи<br>✓ понякога ме побърква<br>✓ понякога не ми вярва</p>
+<p>Но също така:</p>
+<p>✓ остана<br>✓ построи този живот с мен<br>✓ мина през всичко това</p>
+<button onclick="next()">Финал</button>
+</section>
+
+<section class="screen final">
+<h1>🎆</h1>
+<h2>Петя ❤️ Теодор</h2>
+<p>26.09.2019</p>
+<p>7 години.</p>
+<p>Много спорове.<br>Много идеи.<br>Много ремонти.</p>
+<h3>Делото продължава.</h3>
+<h2>💛 Честита годишнина, дупе.</h2>
+<p>Обичкам си те много.</p>
+</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
